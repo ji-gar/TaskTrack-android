@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/box"
+    android:layout_width="match_parent"
+    android:elevation="10dp"
+    android:padding="30dp"
+    app:cardCornerRadius="4dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/holder"
+        android:layout_width="346dp"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotbold"
+            android:text="Taskname"
+            android:textColor="#415CF6"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+        />
+
+        <TextView
+            android:id="@+id/taskcomplated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="105dp"
+            android:layout_toRightOf="@+id/taskname"
+            android:text="4/5"
+            android:textColor="#808080"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/taskcomplated"
+            android:layout_marginTop="50dp"
+            android:progressDrawable="@drawable/customprocessbar" />
+    </RelativeLayout>
+
+
+</LinearLayout>
